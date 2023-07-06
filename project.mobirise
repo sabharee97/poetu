@@ -13,7 +13,7 @@
         "warningColor": "#FFE161",
         "dangerColor": "#ff9966",
         "mainFont": "Jost",
-        "display1Font": "Jost",
+        "display1Font": "Roboto",
         "display1Size": 4.6,
         "display2Font": "Jost",
         "display2Size": 3,
@@ -24,10 +24,10 @@
         "display4Font": "Jost",
         "display4Size": 1.1,
         "isRoundedButtons": false,
-        "isGhostButtonBorder": false,
-        "underlinedLinks": false,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": true,
         "isAnimatedOnScroll": true,
-        "isScrollToTopButton": true
+        "isScrollToTopButton": false
       },
       "additionalSetColors": [
         "#5e8fa7"
@@ -40,6 +40,11 @@
         "css": "'Jost', sans-serif",
         "name": "Jost",
         "url": "https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
+      },
+      {
+        "css": "'Roboto', sans-serif",
+        "name": "Roboto",
+        "url": "https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
       }
     ],
     "uniqCompNum": 23,
