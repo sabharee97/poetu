@@ -1,3 +1,6 @@
+.btn {
+  border-width: 2px;
+}
 body {
   font-family: Space Grotesk;
 }
@@ -292,7 +295,7 @@ body {
 .btn-primary-outline,
 .btn-primary-outline:active {
   background-color: transparent !important;
-  border-color: transparent;
+  border-color: #ffffff;
   color: #ffffff;
 }
 .btn-primary-outline:hover,
@@ -301,7 +304,7 @@ body {
 .btn-primary-outline.active {
   color: #d4d4d4 !important;
   background-color: transparent!important;
-  border-color: transparent!important;
+  border-color: #d4d4d4 !important;
   box-shadow: none!important;
 }
 .btn-primary-outline.disabled,
@@ -313,7 +316,7 @@ body {
 .btn-secondary-outline,
 .btn-secondary-outline:active {
   background-color: transparent !important;
-  border-color: transparent;
+  border-color: #a4a2a2;
   color: #a4a2a2;
 }
 .btn-secondary-outline:hover,
@@ -322,7 +325,7 @@ body {
 .btn-secondary-outline.active {
   color: #797676 !important;
   background-color: transparent!important;
-  border-color: transparent!important;
+  border-color: #797676 !important;
   box-shadow: none!important;
 }
 .btn-secondary-outline.disabled,
@@ -334,7 +337,7 @@ body {
 .btn-info-outline,
 .btn-info-outline:active {
   background-color: transparent !important;
-  border-color: transparent;
+  border-color: #000000;
   color: #000000;
 }
 .btn-info-outline:hover,
@@ -343,7 +346,7 @@ body {
 .btn-info-outline.active {
   color: #000000 !important;
   background-color: transparent!important;
-  border-color: transparent!important;
+  border-color: #000000 !important;
   box-shadow: none!important;
 }
 .btn-info-outline.disabled,
@@ -355,7 +358,7 @@ body {
 .btn-success-outline,
 .btn-success-outline:active {
   background-color: transparent !important;
-  border-color: transparent;
+  border-color: #3d4d46;
   color: #3d4d46;
 }
 .btn-success-outline:hover,
@@ -364,7 +367,7 @@ body {
 .btn-success-outline.active {
   color: #171d1a !important;
   background-color: transparent!important;
-  border-color: transparent!important;
+  border-color: #171d1a !important;
   box-shadow: none!important;
 }
 .btn-success-outline.disabled,
@@ -376,7 +379,7 @@ body {
 .btn-warning-outline,
 .btn-warning-outline:active {
   background-color: transparent !important;
-  border-color: transparent;
+  border-color: #6a5458;
   color: #6a5458;
 }
 .btn-warning-outline:hover,
@@ -385,7 +388,7 @@ body {
 .btn-warning-outline.active {
   color: #3a2e30 !important;
   background-color: transparent!important;
-  border-color: transparent!important;
+  border-color: #3a2e30 !important;
   box-shadow: none!important;
 }
 .btn-warning-outline.disabled,
@@ -397,7 +400,7 @@ body {
 .btn-danger-outline,
 .btn-danger-outline:active {
   background-color: transparent !important;
-  border-color: transparent;
+  border-color: #706359;
   color: #706359;
 }
 .btn-danger-outline:hover,
@@ -406,7 +409,7 @@ body {
 .btn-danger-outline.active {
   color: #403833 !important;
   background-color: transparent!important;
-  border-color: transparent!important;
+  border-color: #403833 !important;
   box-shadow: none!important;
 }
 .btn-danger-outline.disabled,
@@ -418,7 +421,7 @@ body {
 .btn-black-outline,
 .btn-black-outline:active {
   background-color: transparent !important;
-  border-color: transparent;
+  border-color: #232323;
   color: #232323;
 }
 .btn-black-outline:hover,
@@ -427,7 +430,7 @@ body {
 .btn-black-outline.active {
   color: #000000 !important;
   background-color: transparent!important;
-  border-color: transparent!important;
+  border-color: #000000 !important;
   box-shadow: none!important;
 }
 .btn-black-outline.disabled,
@@ -439,7 +442,7 @@ body {
 .btn-white-outline,
 .btn-white-outline:active {
   background-color: transparent !important;
-  border-color: transparent;
+  border-color: #fafafa;
   color: #fafafa;
 }
 .btn-white-outline:hover,
@@ -448,7 +451,7 @@ body {
 .btn-white-outline.active {
   color: #cfcfcf !important;
   background-color: transparent!important;
-  border-color: transparent!important;
+  border-color: #cfcfcf !important;
   box-shadow: none!important;
 }
 .btn-white-outline.disabled,
@@ -522,17 +525,12 @@ a.text-black.active {
   color: #000000 !important;
 }
 a[class*="text-"]:not(.nav-link):not(.dropdown-item):not([role]):not(.navbar-caption) {
+  transition: 0.2s;
   position: relative;
-  background-image: transparent;
+  background-image: linear-gradient(currentColor 50%, currentColor 50%);
   background-size: 10000px 2px;
   background-repeat: no-repeat;
-  background-position: 0px 1.2em;
-  background-position: -10000px 1.2em;
-}
-a[class*="text-"]:not(.nav-link):not(.dropdown-item):not([role]):not(.navbar-caption):hover {
-  transition: background-position 2s ease-in-out;
-  background-image: linear-gradient(currentColor 50%, currentColor 50%);
-  background-position: 0px 1.2em;
+  background-position: 0 1.2em;
 }
 .nav-tabs .nav-link.active {
   color: #ffffff;
@@ -552,6 +550,12 @@ a[class*="text-"]:not(.nav-link):not(.dropdown-item):not([role]):not(.navbar-cap
 .alert-danger {
   background-color: #706359;
 }
+.mbr-section-btn a.btn:not(.btn-form) {
+  border-radius: 100px;
+}
+.mbr-gallery-filter li a {
+  border-radius: 100px !important;
+}
 .mbr-gallery-filter li.active .btn {
   background-color: #ffffff;
   border-color: #ffffff;
@@ -559,6 +563,9 @@ a[class*="text-"]:not(.nav-link):not(.dropdown-item):not([role]):not(.navbar-cap
 }
 .mbr-gallery-filter li.active .btn:focus {
   box-shadow: none;
+}
+.nav-tabs .nav-link {
+  border-radius: 100px !important;
 }
 a,
 a:hover {
@@ -615,6 +622,19 @@ blockquote {
   border-color: #ffffff;
 }
 /* Forms */
+.mbr-form .input-group-btn a.btn {
+  border-radius: 100px !important;
+}
+.mbr-form .input-group-btn a.btn:hover {
+  box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2);
+}
+.mbr-form .input-group-btn button[type="submit"] {
+  border-radius: 100px !important;
+  padding: 1rem 3rem;
+}
+.mbr-form .input-group-btn button[type="submit"]:hover {
+  box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2);
+}
 .jq-selectbox li:hover,
 .jq-selectbox li.selected {
   background-color: #ffffff;
@@ -1348,6 +1368,9 @@ a {
 .cid-ttRteTadKS .mbr-section-btn,
 .cid-ttRteTadKS .image-wrapper {
   text-align: center;
+}
+.cid-ttRteTadKS .title-custom-font {
+  font-family: 'Dancing Script', cursive;
 }
 .cid-ttRtHle4TA {
   padding-top: 5rem;
