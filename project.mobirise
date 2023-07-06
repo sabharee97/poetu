@@ -13,13 +13,13 @@
         "warningColor": "#FFE161",
         "dangerColor": "#ff9966",
         "mainFont": "Jost",
-        "display1Font": "Roboto",
+        "display1Font": "Dancing Script",
         "display1Size": 4.6,
         "display2Font": "Jost",
         "display2Size": 3,
         "display5Font": "Jost",
         "display5Size": 2.2,
-        "display7Font": "Jost",
+        "display7Font": "Roboto",
         "display7Size": 1.2,
         "display4Font": "Jost",
         "display4Size": 1.1,
@@ -45,6 +45,11 @@
         "css": "'Roboto', sans-serif",
         "name": "Roboto",
         "url": "https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+      },
+      {
+        "css": "'Dancing Script', handwriting",
+        "name": "Dancing Script",
+        "url": "https://fonts.googleapis.com/css?family=Dancing+Script:400,500,600,700"
       }
     ],
     "uniqCompNum": 23,
