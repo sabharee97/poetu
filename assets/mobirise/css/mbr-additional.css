@@ -718,6 +718,9 @@ a {
   z-index: 1000;
   width: 100%;
 }
+.cid-ttRteJbtJm .title-custom-font {
+  font-family: 'Dancing Script', cursive;
+}
 .cid-ttRteJbtJm .navbar-dropdown {
   background-color: #000000 !important;
   padding: 0;
@@ -1538,6 +1541,9 @@ a {
 .cid-ttRteJbtJm {
   z-index: 1000;
   width: 100%;
+}
+.cid-ttRteJbtJm .title-custom-font {
+  font-family: 'Dancing Script', cursive;
 }
 .cid-ttRteJbtJm .navbar-dropdown {
   background-color: #000000 !important;
