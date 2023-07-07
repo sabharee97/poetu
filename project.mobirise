@@ -1,6 +1,6 @@
 {
   "settings": {
-    "currentPage": "home.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "boldm5",
       "title": "BoldM5",
@@ -62,6 +62,7 @@
     "siteUrl": false,
     "cookiesAlert": false,
     "gdpr": false,
+    "publishChangesOnly": true,
     "uniqCompNum": 5,
     "versionPublish": "5.8.14"
   },
@@ -817,7 +818,7 @@
         }
       ]
     },
-    "home.html": {
+    "index.html": {
       "settings": {
         "main": true,
         "title": "Home",
