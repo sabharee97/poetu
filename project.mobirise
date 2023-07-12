@@ -54,7 +54,7 @@
     ],
     "imageResize": true,
     "favicon": "@PROJECT_PATH@/assets/images/heart-64x64_1.png",
-    "mbrsiteDomain": "hewasasxh4",
+    "mbrsiteDomain": "p4zwr03e8i",
     "usedWebp": false,
     "robotsSwitcher": false,
     "sitemapSwitcher": false,
@@ -63,8 +63,9 @@
     "cookiesAlert": false,
     "gdpr": false,
     "publishChangesOnly": false,
-    "uniqCompNum": 5,
-    "versionPublish": "5.8.14"
+    "uniqCompNum": 6,
+    "versionPublish": "5.8.14",
+    "screenshot": "screenshot.png"
   },
   "pages": {
     "littlequarks.html": {
@@ -704,11 +705,11 @@
           "_cid": "ttRteJbtJm",
           "_PHPplaceholders": [],
           "_JSplaceholders": [],
+          "_anchor": "menu1-0",
           "_protectedParams": [],
           "_global": true,
           "_once": "menu",
-          "_params": {},
-          "_anchor": "menu1-0"
+          "_params": {}
         },
         {
           "alias": false,
@@ -810,11 +811,11 @@
           "_sourceTheme": "boldm5",
           "_customHTML": "<section data-bs-version=\"5.1\" class=\"content5 boldm5\" group=\"Content\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Reverse\" name=\"reverseContent\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <input type=\"color\" title=\"Buttons Animation\" value=\"#ffffff\" name=\"buttonAni\" condition=\"showButtons\">\n        <input type=\"color\" title=\"Buttons Color\" value=\"#000000\" name=\"buttonColor\" condition=\"showButtons\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\" mbr-class=\"{'flex-row-reverse' : reverseContent}\">\n            <div class=\"col-12 col-lg-5 title-wrap\">\n                <div class=\"title-wrapper\">\n                    <h3 class=\"mbr-section-title mbr-fonts-style\" mbr-if=\"showTitle\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-section-title\"><br><br><br>Memories of this little quarks...</h3>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">Situations makes us to feel stressed, shatter our plans of the near future. Yet, It never failed to make us as a better person. Yes, the reason behind this draft is a good one though :)\n<br>\n<br>Where to begin?\n<br>\n<br>From the mysterious moon or from the wide vast beautiful sky ??\n<br>\n<br>HaHa... Words are beautiful right... Let me start from my favourite with respect to no order !!\n<br>(Just kidding we know, she is my fav. now and forever... Ms. Mysterious)\n<br>\n<br>\n<br>The Moon(The real one from the sky !!)...\n<br>\n<br>Under her glow just shining a little these days... Of course this 10 months of never witnessing the out side world impacted much yet there were beautiful people to revive through chit chats over modern communications. People are amazing by their own way, few with anger issues many with insecurities we don't need to judge them to have a good company.\n<br>\n<br>There were really few who invoked my travelling diaries... It is really strange we meet /interact with them once and they're capable of doing magic in our life without knowing what they do here !!\n<br>\n<br>It's a tale of magic... to be precise and the glow as well.. So, People are the real moon each one of them... To be honest very VERY few of them I mean....\n<br>\n<br>The colourful journey started with some random day with unplanned chaotic magic .....&nbsp;</p>\n                </div>\n            </div>\n            <div class=\"col-12 col-lg-7\">\n                <div class=\"image-wrapper\">\n                    <img src=\"@PROJECT_PATH@/assets/images/moon-813x542.jpeg\" alt>\n                    <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\"><a class=\"btn btn-secondary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">\n                            <span class=\"mobi-mbri mobi-mbri-play mbr-iconfont mbr-iconfont-btn\"></span>\n                            See news\n                        </a></div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "tJfZlhzHNe",
+          "_anchor": "content5-1",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "content5-1"
+          "_params": {}
         }
       ]
     },
@@ -1659,11 +1660,26 @@
           "_sourceTheme": "boldm5",
           "_customHTML": "<section data-bs-version=\"5.1\" class=\"content5 boldm5\" group=\"Content\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Reverse\" name=\"reverseContent\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <input type=\"color\" title=\"Buttons Animation\" value=\"#ffffff\" name=\"buttonAni\" condition=\"showButtons\">\n        <input type=\"color\" title=\"Buttons Color\" value=\"#000000\" name=\"buttonColor\" condition=\"showButtons\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\" mbr-class=\"{'flex-row-reverse' : reverseContent}\">\n            <div class=\"col-12 col-lg-5 title-wrap\">\n                <div class=\"title-wrapper\">\n                    <h3 class=\"mbr-section-title mbr-fonts-style\" mbr-if=\"showTitle\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-section-title\">Memories of this little quarks...</h3>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\"><br>Situations makes us to feel stressed, shatter our plans of the near future. Yet, It never failed to make us as a better person. Yes, the reason behind this draft is a good one though :)\n<br>\n<br>Where to begin?<br><br><a href=\"littlequarks.html\" class=\"text-primary\">Read more....</a></p>\n                </div>\n            </div>\n            <div class=\"col-12 col-lg-7\">\n                <div class=\"image-wrapper\">\n                    <a href=\"page1.html\"><img src=\"@PROJECT_PATH@/assets/images/moon-813x542.jpeg\" alt></a>\n                    <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\"><a class=\"btn btn-secondary\" href=\"littlequarks.html\" data-app-placeholder=\"Type Text\">Read...</a></div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "tJg8w6XQRI",
+          "_anchor": "content5-3",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "content5-3"
+          "_params": {}
+        },
+        {
+          "_customTemplate": true,
+          "_afterNavbarItem": false,
+          "_customHTML": "<!-- Type valid HTML here -->\n\n<div>\n<iframe src=\"https://www.yourquote.in/surya-zbia/quotes\" title=\"poetu\"></iframe>\n</div>",
+          "_customCSS": "/* Type valid CSS here */\n\ndiv {\n  padding: 80px 0;\n  color: #777;\n  text-align: center;\n}\np {\n  font-size: 60px;\n  color: #777;\n}",
+          "alias": "code-editor",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "pro.custom-html",
+          "_sourceTheme": "boldm5",
+          "_anchor": "custom-html-5",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": []
         }
       ]
     }

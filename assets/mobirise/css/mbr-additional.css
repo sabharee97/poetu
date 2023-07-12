@@ -2116,3 +2116,15 @@ a {
   color: #b6b6b6;
   text-align: center;
 }
+#custom-html-5 {
+  /* Type valid CSS here */
+}
+#custom-html-5 div {
+  padding: 80px 0;
+  color: #777;
+  text-align: center;
+}
+#custom-html-5 p {
+  font-size: 60px;
+  color: #777;
+}
