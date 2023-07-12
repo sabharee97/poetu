@@ -63,7 +63,7 @@
     "cookiesAlert": false,
     "gdpr": false,
     "publishChangesOnly": false,
-    "uniqCompNum": 6,
+    "uniqCompNum": 7,
     "versionPublish": "5.8.14",
     "screenshot": "screenshot.png"
   },
@@ -1591,6 +1591,116 @@
             "& when (@fullWidth)": {
               ".container-fluid": {
                 "margin": "0",
+                "padding": "0 60px",
+                "@media (max-width: 992px)": {
+                  "padding": "0 25px"
+                },
+                ".row": {
+                  "padding": "0"
+                }
+              }
+            },
+            "& when not (@fullWidth)": {
+              "@media (max-width: 992px)": {
+                ".row": {
+                  "padding": "0 13px"
+                }
+              }
+            },
+            ".image-wrap": {
+              "display": "flex",
+              "flex-direction": "column",
+              "justify-content": "center",
+              ".image-wrapper": {
+                "@media (max-width: 992px)": {
+                  "margin-bottom": "50px"
+                },
+                "img": {
+                  "height": "210px",
+                  "object-fit": "cover",
+                  "@media (max-width: 992px)": {
+                    "max-width": "240px",
+                    "margin": "0 auto"
+                  }
+                }
+              }
+            },
+            ".text-wrapper": {
+              "padding-left": "20px",
+              "& when (@reverseContent)": {
+                "padding-left": "0",
+                "padding-right": "20px",
+                "@media (max-width: 992px)": {
+                  "padding": "0"
+                }
+              },
+              "@media (max-width: 992px)": {
+                "padding": "0"
+              },
+              ".mbr-text": {
+                "margin-bottom": "0",
+                "opacity": ".85"
+              },
+              ".mbr-name": {
+                "margin": "34px 0 0",
+                "opacity": ".85"
+              },
+              ".mbr-role": {
+                "margin": "24px 0 0",
+                "opacity": ".85"
+              }
+            },
+            ".mbr-text": {
+              "color": "#ffffff"
+            },
+            ".mbr-name": {
+              "color": "#ffffff"
+            },
+            ".mbr-role": {
+              "color": "#ffffff"
+            }
+          },
+          "_name": "content6",
+          "_sourceTheme": "boldm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"content6 boldm5\" group=\"Content\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Reverse\" name=\"reverseContent\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Name\" name=\"showName\" checked>\n        <input type=\"checkbox\" title=\"Role\" name=\"showRole\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\" mbr-class=\"{'flex-row-reverse' : reverseContent}\">\n            <div class=\"col-12 col-lg-3 image-wrap\">\n                <div class=\"image-wrapper\">\n                    <a href=\"https://www.yourquote.in/surya-zbia/quotes\" target=\"_blank\"><img src=\"@PROJECT_PATH@/assets/images/mbr-1-596x596.png\" alt=\"Poetu\"></a>\n                </div>\n            </div>\n            <div class=\"col-12 col-lg-9\">\n                <div class=\"text-wrapper\">\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-if=\"showText\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-text\">\n                        <a href=\"https://www.yourquote.in/surya-zbia/quotes\" class=\"text-primary\" target=\"_blank\">\"வரிகளின் வழியே நானும்\"</a>\n                    </p>\n                    <p class=\"mbr-name mbr-fonts-style\" mbr-if=\"showName\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-name\"></p>\n                    <p class=\"mbr-role mbr-fonts-style\" mbr-if=\"showRole\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-role\"><a href=\"https://www.yourquote.in/surya-zbia/quotes\" class=\"text-primary\" target=\"_blank\">yourquote.in/poetu</a></p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tJMPB1fQUf",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content6-6"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            "& when (@fullWidth)": {
+              ".container-fluid": {
+                "margin": "0",
                 "padding": "0",
                 "@media (max-width: 992px)": {
                   "padding": "0"
@@ -1665,21 +1775,6 @@
           "_global": false,
           "_once": false,
           "_params": {}
-        },
-        {
-          "_customTemplate": true,
-          "_afterNavbarItem": false,
-          "_customHTML": "<!-- Type valid HTML here -->\n\n<div>\n<iframe src=\"https://www.yourquote.in/surya-zbia/quotes\" title=\"poetu\"></iframe>\n</div>",
-          "_customCSS": "/* Type valid CSS here */\n\ndiv {\n  padding: 80px 0;\n  color: #777;\n  text-align: center;\n}\np {\n  font-size: 60px;\n  color: #777;\n}",
-          "alias": "code-editor",
-          "_tags": [
-            "Extension"
-          ],
-          "_name": "pro.custom-html",
-          "_sourceTheme": "boldm5",
-          "_anchor": "custom-html-5",
-          "_PHPplaceholders": [],
-          "_JSplaceholders": []
         }
       ]
     }
