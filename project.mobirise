@@ -63,7 +63,7 @@
     "cookiesAlert": false,
     "gdpr": false,
     "publishChangesOnly": false,
-    "uniqCompNum": 7,
+    "uniqCompNum": 11,
     "versionPublish": "5.8.14",
     "screenshot": "screenshot.png"
   },
@@ -1777,6 +1777,173 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            "& when (@fullWidth)": {
+              ".container-fluid": {
+                "margin": "0",
+                "padding": "0 60px",
+                "@media (max-width: 992px)": {
+                  "padding": "0 25px"
+                },
+                ".row": {
+                  "padding": "0"
+                }
+              }
+            },
+            "& when not (@fullWidth)": {
+              "@media (max-width: 992px)": {
+                ".row": {
+                  "padding": "0 13px"
+                }
+              }
+            },
+            ".row": {
+              "justify-content": "center"
+            },
+            ".tabs-wrapper": {
+              "display": "flex",
+              "justify-content": "space-between",
+              "align-items": "center",
+              "@media (max-width: 992px)": {
+                "display": "block"
+              },
+              ".nav.nav-tabs": {
+                "border": "none",
+                "padding-right": "96px",
+                "display": "block",
+                "width": "52%",
+                "& when (@reverseContent)": {
+                  "padding-right": "0",
+                  "padding-left": "96px",
+                  "@media (max-width: 1200px)": {
+                    "padding-left": "46px"
+                  },
+                  "@media (max-width: 1100px)": {
+                    "padding-left": "16px"
+                  },
+                  "@media (max-width: 992px)": {
+                    "padding": "0"
+                  }
+                },
+                "@media (max-width: 1200px)": {
+                  "padding-right": "46px"
+                },
+                "@media (max-width: 1100px)": {
+                  "padding-right": "16px"
+                },
+                "@media (max-width: 992px)": {
+                  "padding": "0",
+                  "width": "auto"
+                },
+                ".nav-item": {
+                  "border-top": "1px solid @border",
+                  "&:first-child": {
+                    "border": "none"
+                  },
+                  ".nav-link": {
+                    "padding": "42px 0 46px",
+                    "margin-bottom": "0",
+                    "color": "@tabs",
+                    "border-radius": "0",
+                    "transition": "all 0.3s ease-out",
+                    "border": "none",
+                    "position": "relative",
+                    "&::before": {
+                      "content": "''",
+                      "position": "absolute",
+                      "width": "100%",
+                      "height": "100%",
+                      "top": "0",
+                      "left": "0",
+                      "background-image": "linear-gradient(99deg, @active 0, rgba(255, 255, 255, 0) 60%)",
+                      "opacity": "0",
+                      "transition": "all 0.3s ease-out"
+                    },
+                    "&:focus": {
+                      "border": "none !important",
+                      "&::before": {
+                        "opacity": ".85"
+                      }
+                    },
+                    "&:hover": {
+                      "border": "none !important",
+                      "&::before": {
+                        "opacity": ".85"
+                      }
+                    },
+                    "@media (max-width: 992px)": {
+                      "padding": "32px 0 35px"
+                    },
+                    "@media (max-width: 768px)": {
+                      "padding": "12px 0 16px"
+                    }
+                  },
+                  ".nav-link.active": {
+                    "background-color": "transparent",
+                    "border": "none !important",
+                    "&::before": {
+                      "opacity": ".85"
+                    }
+                  }
+                }
+              },
+              ".tab-content": {
+                "width": "50%",
+                "@media (max-width: 992px)": {
+                  "margin-top": "20px",
+                  "width": "100%"
+                },
+                ".tab-pane": {
+                  ".image-wrapper": {
+                    "img": {
+                      "height": "960px",
+                      "object-fit": "cover",
+                      "@media (max-width: 992px)": {
+                        "height": "400px"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "_name": "tabs1",
+          "_sourceTheme": "boldm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"tabs1 boldm5\" group=\"List\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\" plugins=\"mbr-tabs\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Reverse\" name=\"reverseContent\">\n        <header>Tabs</header>\n        <select title=\"Count\" name=\"bootstrapTabs\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\" selected=\"\">5</option>\n            <option value=\"6\">6</option>\n        </select>\n        <input type=\"color\" title=\"Border Color\" value=\"#282828\" name=\"border\" selected=\"\">\n        <input type=\"color\" title=\"Tabs Color\" value=\"#ffffff\" name=\"tabs\" selected=\"\">\n        <input type=\"color\" title=\"Active Color\" value=\"#000000\" name=\"active\" selected=\"\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax=\"\">\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax=\"\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected=\"\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12\">\n                <div class=\"tabs-wrapper\" mbr-class=\"{'flex-row-reverse' : reverseContent}\">\n                    <ul class=\"nav nav-tabs\" role=\"tablist\">\n                        <li mbr-buttons=\"\" mbr-theme-style=\"display-5\" class=\"nav-item first mbr-fonts-style\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrLink,-mbrBtnRemove,-iconFont\">\n                            <a class=\"nav-link mbr-fonts-style show active\" role=\"tab\" data-toggle=\"tab\" data-bs-toggle=\"tab\" href=\"#tab1\" data-app-placeholder=\"Type Text\" aria-selected=\"true\">\n                                Programming\n                            </a>\n                        </li>\n                        <li mbr-buttons=\"\" mbr-theme-style=\"display-5\" class=\"nav-item\" mbr-if=\"bootstrapTabs > 1\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrLink,-mbrBtnRemove,-iconFont\">\n                            <a class=\"nav-link mbr-fonts-style\" role=\"tab\" data-toggle=\"tab\" data-bs-toggle=\"tab\" href=\"#tab2\" data-app-placeholder=\"Type Text\" aria-selected=\"true\">\n                                Research\n                            </a>\n                        </li>\n                        <li mbr-buttons=\"\" mbr-theme-style=\"display-5\" class=\"nav-item\" mbr-if=\"bootstrapTabs > 2\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrLink,-mbrBtnRemove,-iconFont\">\n                            <a class=\"nav-link mbr-fonts-style\" role=\"tab\" data-toggle=\"tab\" data-bs-toggle=\"tab\" href=\"#tab3\" data-app-placeholder=\"Type Text\" aria-selected=\"true\">\n                                Development\n                            </a>\n                        </li>\n                        <li mbr-buttons=\"\" mbr-theme-style=\"display-5\" class=\"nav-item\" mbr-if=\"bootstrapTabs > 3\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrLink,-mbrBtnRemove,-iconFont\">\n                            <a class=\"nav-link mbr-fonts-style\" role=\"tab\" data-toggle=\"tab\" data-bs-toggle=\"tab\" href=\"#tab4\" data-app-placeholder=\"Type Text\" aria-selected=\"true\">\n                                Phases\n                            </a>\n                        </li>\n                        <li mbr-buttons=\"\" mbr-theme-style=\"display-5\" class=\"nav-item\" mbr-if=\"bootstrapTabs > 4\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrLink,-mbrBtnRemove,-iconFont\">\n                            <a class=\"nav-link mbr-fonts-style\" role=\"tab\" data-toggle=\"tab\" data-bs-toggle=\"tab\" href=\"#tab5\" data-app-placeholder=\"Type Text\" aria-selected=\"true\">\n                                Design\n                            </a>\n                        </li>\n                        <li mbr-buttons=\"\" mbr-theme-style=\"display-5\" class=\"nav-item\" mbr-if=\"bootstrapTabs > 5\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove,-mbrLink,-mbrBtnRemove,-iconFont\">\n                            <a class=\"nav-link mbr-fonts-style\" role=\"tab\" data-toggle=\"tab\" data-bs-toggle=\"tab\" href=\"#tab6\" data-app-placeholder=\"Type Text\" aria-selected=\"true\">\n                                Architecture\n                            </a>\n                        </li>\n                    </ul>\n                    <div class=\"tab-content\">\n                        <div id=\"tab1\" class=\"tab-pane in active\" role=\"tabpanel\">\n                            <div class=\"image-wrapper\">\n                                <img src=\"../_images/bold/image1.jpg\" alt=\"Mobirise\">\n                            </div>\n                        </div>\n                        <div id=\"tab2\" class=\"tab-pane\" role=\"tabpanel\" mbr-if=\"bootstrapTabs > 1\">\n                            <div class=\"image-wrapper\">\n                                <img src=\"../_images/bold/image2.jpg\" alt=\"Mobirise\">\n                            </div>\n                        </div>\n                        <div id=\"tab3\" class=\"tab-pane\" role=\"tabpanel\" mbr-if=\"bootstrapTabs > 2\">\n                            <div class=\"image-wrapper\">\n                                <img src=\"../_images/bold/image14.jpg\" alt=\"Mobirise\">\n                            </div>\n                        </div>\n                        <div id=\"tab4\" class=\"tab-pane\" role=\"tabpanel\" mbr-if=\"bootstrapTabs > 3\">\n                            <div class=\"image-wrapper\">\n                                <img src=\"../_images/bold/image6.jpg\" alt=\"Mobirise\">\n                            </div>\n                        </div>\n                        <div id=\"tab5\" class=\"tab-pane\" role=\"tabpanel\" mbr-if=\"bootstrapTabs > 4\">\n                            <div class=\"image-wrapper\">\n                                <img src=\"../_images/bold/image9.jpg\" alt=\"Mobirise\">\n                            </div>\n                        </div>\n                        <div id=\"tab6\" class=\"tab-pane\" role=\"tabpanel\" mbr-if=\"bootstrapTabs > 5\">\n                            <div class=\"image-wrapper\">\n                                <img src=\"../_images/bold/image14.jpg\" alt=\"Mobirise\">\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tJZIwv1Ol9",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "tabs1-a"
         }
       ]
     }
