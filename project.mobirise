@@ -63,9 +63,9 @@
     "siteUrl": false,
     "cookiesAlert": false,
     "gdpr": false,
-    "publishChangesOnly": false,
+    "publishChangesOnly": true,
     "uniqCompNum": 13,
-    "versionPublish": "5.9.17",
+    "versionPublish": "5.9.18",
     "screenshot": "screenshot.png"
   },
   "pages": {
