@@ -54,8 +54,8 @@
       }
     ],
     "imageResize": true,
-    "favicon": "@PROJECT_PATH@/assets/images/heart-64x64_1.png",
-    "mbrsiteDomain": "7sanprsyqs",
+    "favicon": "@PROJECT_PATH@/assets/images/icons8-moon-24-24x24.png",
+    "mbrsiteDomain": "obl8bb1dt6",
     "usedWebp": false,
     "robotsSwitcher": false,
     "sitemapSwitcher": false,
